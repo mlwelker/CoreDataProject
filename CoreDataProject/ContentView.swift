@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  CoreDataProject
-//
-//  Created by Michael Welker on 2023-08-29.
-//
 
 import SwiftUI
 
