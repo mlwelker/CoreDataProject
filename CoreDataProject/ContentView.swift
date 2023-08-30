@@ -2,8 +2,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) var moc
+    
     var body: some View {
-        Text("hello world")
+        Button("Save") {
+            if moc.hasChanges {
+                try? moc.save()
+            }
+        }
     }
 }
 
